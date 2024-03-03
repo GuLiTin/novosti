@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profstyle.css">
+    <title></title>
+</head>
+<body>
+    <div class="block">
+    <ul class="menu">
+        <h1 class="name">Test</h1>
+        <li><button class="stol">Мой профиль</button></li>
+        <li><button class="stol h" id="buton" onclick="openAb()">Добавить публикацию</button></li>
+        <li><button class="stol">Мои предупреждения</button></li>
+        <li><button class="stol">Настройки</button></li>
+    </ul>
+    </div>
+    <div class="prof">
+        <div class="avatar">
+            <img src="/proect/proff.png" alt="" class="icon">
+            <div class="atr">
+            <div class="Names">Имя: Test</div>
+            <div class="Date">Дата создания: 21.21.2024</div>
+            <div class="IDuser">ID: 23451</div>
+            </div>
+            <div class="mne">Обо мне: dmgfdngfjgdnfggfd ghfdh g h hf hf hhgfhghhfgh </div>
+        </div>
+        <div class="nas">
+            <div class="podpis">
+                <div>Цензура</div>
+                <div>Сообщения</div>
+            </div>
+            <div class="knop">
+                <label class="switch">
+                    
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+                  <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+        </div>
+        <div class="publik">
+            <div class="zag">Мои публикации</div>
+            <div class="posts">BBdf sf sdgfdsgdfg</div>
+        </div>
+
+        <div class="forma-hide"  id="one">
+            <form action="">
+                <h2>Публикация</h2>
+    
+                <div>
+                    <label for="username">Заголовок</label>
+                    <input type="text" placeholder="Введите заголовок" required class="zz">
+                </div>
+                
+                <div>
+                    <label for="username">Тема</label>
+                    <input type="text" placeholder="Введите тему" required class="tt">
+                </div>
+    
+                <div>
+                    <label for="username">Текст</label>
+                    <textarea name="" id="" cols="30" rows="10" class="te" required></textarea>
+                </div>
+    
+                <button type="submit" class="but">Добавить</button>
+    
+            </form>
+        </div>
+    </div>
+    
+    <script src="/proect/profscript.js"></script>
+</body>
+</html>

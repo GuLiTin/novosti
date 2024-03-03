@@ -1,0 +1,31 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+.shap{
+    display: flex;
+    gap:10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornsilk;
+    border-bottom: 1px solid black;
+}
+.novosti{
+    background-color: rgb(252, 247, 229);
+    width: 1920px;
+    height: 880px;
+}
+.naz{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 20px;
+}
+.prof{
+    padding-right: 10px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}

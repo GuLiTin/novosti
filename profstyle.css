@@ -1,0 +1,316 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+li{
+    list-style-type: none;
+    font-size: 20px;
+}
+.block{
+    display:flex;
+    width: 300px;
+    height: 951px;
+    border-right: 1px solid black;
+}
+.menu{
+    width: 300px;
+    height: 951px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    background-color: cornsilk;
+}
+li:hover{
+    background-color: rgb(189, 189, 189);
+    transition: 1s linear;
+}
+li{
+    width: 300px;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.stol{
+    width: 300px;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    border:none;
+    align-items: center;
+    background-color: cornsilk;
+    font-family: tahoma;
+    font-size: 22px;
+}
+.stol:hover{
+  background-color: rgb(189, 189, 189);
+  transition: 1s linear;
+}
+.name{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.prof{
+    width: 1603px;
+    height: 951px;
+    background-color: rgb(252, 247, 229);
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.avatar{
+    border:1px solid black;
+    width: 800px;
+    height: 100px;
+    margin-left:20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap:20px;
+}
+.atr{
+    display: grid;
+
+}
+.icon{
+    width: 100px;
+    height: 100px;
+}
+.publik{
+    width: 600px;
+    height: 700px;
+    border:1px solid black;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: -80px;
+    padding: 10px;
+    display: grid;
+}
+.nas{
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    border:1px solid black;
+    border-radius: 20px;
+    display: flex;
+    gap:20px;
+}
+.podpis{
+  display: grid;
+}
+.knop{
+  display: grid;
+}
+
+
+
+
+
+
+
+
+
+.open-button{
+  background-color: #555;
+  color: rgb(0, 0, 0);
+  padding: 16px 20px;
+  margin-right: 300px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  display: grid;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgb(177, 75, 75);
+}
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+/*<div class="open-button" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Логин</h1>
+          
+              <label for="email"><b>Почта</b></label>
+              <input type="text" placeholder="Введите Почту" name="email" required>
+          
+              <label for="psw"><b>Пароль</b></label>
+              <input type="password" placeholder="Введите Пароль" name="psw" required>
+          
+              <button type="submit" class="btn">Логин</button>
+              <button type="submit" class="btn cancel" onclick="closeForm()">Закрыть</button>
+            </form>
+          </div>
+*/
+
+
+
+/*Добавление публикации*/
+.forma{
+  width: 350px;
+  height: 450px;
+  border:1px solid black;
+  border-radius: 20px;
+  justify-content: center;
+  background-color: cornsilk;
+}
+.forma-hide{
+  display: none;
+}
+.hidden{
+  display: none;
+}
+form{
+  display: grid;
+  padding: 15px;
+  gap:25px;
+}
+.zz{
+  width: 300px;
+  height: 30px;
+}
+.tt{
+  width: 300px;
+  height: 30px;
+}
+.te{
+  width: 300px;
+  height: 60px;
+}
+.but{
+  width: 300px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: tahoma;
+  font-size: 22px;
+  background-color: rgb(247, 236, 192);
+}
+.but:hover{
+background-color: rgb(189, 189, 189);
+transition: 1s linear;
+}
